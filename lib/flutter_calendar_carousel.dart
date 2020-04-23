@@ -494,6 +494,7 @@ class _CalendarState<T extends EventInterface>
   ) {
     return Stack(
       children: <Widget>[
+        widget.overlapDay != null ? widget.overlapDay : Container(),
         Container(
           margin: EdgeInsets.all(widget.dayPadding),
           child: GestureDetector(
@@ -579,7 +580,6 @@ class _CalendarState<T extends EventInterface>
             ),
           ),
         ),
-        widget.overlapDay != null ? widget.overlapDay : Container()
       ],
     );
   }
