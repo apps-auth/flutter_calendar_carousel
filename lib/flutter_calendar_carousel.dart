@@ -491,10 +491,10 @@ class _CalendarState<T extends EventInterface>
     bool isThisMonthDay,
     DateTime now,
   ) {
-    return CursorTracker(
-      child: Container(
-        margin: EdgeInsets.all(widget.dayPadding),
-        child: GestureDetector(
+    return Container(
+      margin: EdgeInsets.all(widget.dayPadding),
+      child: CursorTracker(
+              child: GestureDetector(
           onLongPress: () => _onDayLongPressed(now),
           child: FlatButton(
             color: isSelectedDay && widget.selectedDayButtonColor != null
