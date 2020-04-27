@@ -39,11 +39,9 @@ packages:
   cursor_tracker:
     dependency: "direct main"
     description:
-      path: "."
-      ref: HEAD
-      resolved-ref: "1190d072d071cdfc58f9aac7c6bb52cdcfdf8aac"
-      url: "https://github.com/apps-auth/cursor_tracker"
-    source: git
+      name: cursor_tracker
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "0.0.1"
   flutter:
     dependency: "direct main"
